@@ -7,8 +7,8 @@ btn.forEach( (item) =>{
         
       obj.name =  $(this).closest('.one-product').find('.product-title').text();
       obj.price = $(this).closest('.one-product').find('.product-price').text();
-      arr.push(obj);
-      localStorage.setItem('product', arr);
+      
+      localStorage.setItem('product',  JSON.stringify(obj));
       
       
     })

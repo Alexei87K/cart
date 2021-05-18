@@ -32,8 +32,10 @@
   </section>
 
  <script>
+  
    if(localStorage.getItem('product')){
-     console.log(localStorage.getItem('product'));
+     let test = JSON.parse(localStorage.getItem('product'));
+    console.log(test);
      
    }
  </script>
