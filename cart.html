@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="cart">
+    <div class="wrapper">
+      <div class="one-cart">
+          <div class="cart-block">
+          <div class="name-blck">Some name</div>
+          <div class="count-blck">
+            <button class="button-plus">-</button>
+            <div class="container-number">0</div>
+            <button class="button-minus">+</button>
+          </div>
+          <div class="price-blck">50</div>
+        
+         </div>
+      </div>
+  
+      <div class="final-blck">
+        <div class="text-final">Итоговая цена</div>
+        <div class="final-price">100</div>
+      </div>
+     
+    </div>
+  </section>
+
+ <script>
+   if(localStorage.getItem('product')){
+     console.log(localStorage.getItem('product'));
+     
+   }
+ </script>
+</body>
+</html>
